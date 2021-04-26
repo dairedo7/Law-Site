@@ -102,6 +102,7 @@
 }
 .dane-kontaktowe {
   color:red;
+  cursor:pointer;
 }
 .save-money__img {
   margin: 24px;
