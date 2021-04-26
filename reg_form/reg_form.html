@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
+</head>
+<body class="page">
+  <header class="header">
+    <h1>Venturion Law Firm</h1>
+    <p>Oficjalna strona internetowa firmy</p>
+  </header>
+  <div class="navbar">
+      <a href="G:/Programming/www/law_site/index.html">Pomoc prawna</a>
+      <a href="#">Oferta Pracy</a>
+      <a href="#">Dla biznesu</a>
+      <a href="reg_form.html">Kontakt</a>
+  </div>
+  <script src="main.js"></script>
+
+<!--  <span class="simple-text">Text 1</span>
+    <span class="simple-text">Text 2</span>
+      <span class="simple-text">Text 3</span>
+      !-->
+ <main>
+  <section class="application_form">
+    <h3>Formularz kontaktowy</h3>
+
+    <div class="container">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="polska">Polska</option>
+          <option value="ukraina">Ukraina</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+   </form>
+  </section>
+ </main>
+  <footer class="footer">
+   <div class="navbar">
+      <!-- Replace to nav tag -->
+        <a href="G:/Programming/www/law_site/index.html">Pomoc prawna</a>
+        <!-- the names of the folders and files should be written with "-" -->
+        <a href="#">Oferta Pracy</a>
+        <a href="#">Dla biznesu</a>
+        <a href="reg_form/reg_form.html">Kontakt</a>
+   </div>
+   <div class="footer__contacts">
+     <h2 class="footer__text">Chcesz dowiedzieć się więcej co do przedstawionej przez nas oferty? Skontaktuj się z nami w jeden z wymienionych sposobów</h2>
+     <div class="footer__logos-container">
+       <a class="footer__link" href="https://www.facebook.com/">
+         <img src="fb.png"
+              class="footer__logo"
+              alt="Facebook-image">
+       </a>
+       <a class="footer__link" href="https://www.facebook.com/">
+          <img src="tg.png"
+               class="footer__logo"
+               alt="Telegram-image">
+       </a>
+        <a class="footer__link" href="https://www.whatsapp.com/">
+          <img src="wa.png"
+               class="footer__logo"
+               alt="WhatsApp-image">
+       </a>
+     </div>
+   </div>
+ </footer>
+</body>
+</html>
