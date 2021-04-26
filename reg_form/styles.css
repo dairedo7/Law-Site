@@ -151,6 +151,10 @@ font-size: 18px;
   }
 }
 @media (max-width: 640px) {
+  .header {
+    width: 100%;
+    background-size: 650px 500px;
+  }
   .footer__logos-container {
     flex-direction: column;
     align-items: center;
