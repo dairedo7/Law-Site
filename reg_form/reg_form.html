@@ -30,23 +30,36 @@
     <h3>Formularz kontaktowy</h3>
 
     <div class="container">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <form id="reg__form" method="post">
+        <label for="fname">Imię</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="lname">Nazwisko</label>
+        <input type="text" id="lname" name="lastname"
+        placeholder="Your last name..."> <br>
 
-        <label for="country">Country</label>
+        <input type="radio" name="sex" id="sex" value="Male">
+        <label for="male">Mężczyzna</label>
+        <input type="radio" name="sex" id="sex" value="Female">
+        <label for="female">Kobieta</label> <br><br>
+
+        <label for="numer__kontaktowy">Numer kontaktowy</label>
+        <input type="text" id="numer__kontaktowy" name="nkontaktowy"
+        placeholder="Leave your number here...">
+        <label for="email">E-mail:</label> <br> <br>
+        <input type="text" id="email" name="email" placeholder="Your email..."> <br> <br>
+
+        <label for="country">Kraj</label>
         <select id="country" name="country">
           <option value="polska">Polska</option>
           <option value="ukraina">Ukraina</option>
         </select>
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <label for="subject">Szczegóły zgłoszenia</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" name="submit" value="Submit">
+        <div id="error" style="color: red"></div>
       </form>
     </div>
    </form>
