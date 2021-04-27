@@ -1,35 +1,53 @@
 //Creating forms
-document.getElementById('main-form');
+document.getElementById('reg__form');
 addEventListener("submit", checkForm);
-//Обработчик события адд ивент лисенер вешается на обьект определенный по ид или классу.
+//Обработчик события адд ивент лисенер вешается на обьект определенный по ид
+//или классу.
+function validation ()
+{
+  var form = document.getELementById("reg__form");
+  var email = document.getELementById("email").value;
+
+  var text = document.getELementById("text");
+  var pattern = /^[^ ]+@+[a-z]{3,7}\.[a-z]{2,3}/;
+  //   if (email.match(pattern)){
+  //     form.classList.add("valid");
+  //   }
+  //   else {
+  //     form.classList.remove("valid");
+  //   }
+  // }
+}
 function checkForm(element) {
 event.preventDefault();
-var el = document.getElementById('main-form');
-console.log(document.getElementById('main-form').sex)
+var el = document.getElementById('reg__form');
 //var name = document.getElementById('name').value;
-var name = el.name.value;
-var pass = el.pass.value;
-var repass = el.repass.value;
+var fname = el.fname.value;
+var lname = el.lname.value;
 var sex = el.sex.value;
-
+var nkontaktowy = el.numer__kontaktowy.value;
+var email = el.email.value;
+var kraj = el.country.value;
+var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 var fail = "";
 
-if(name == "" || pass == "" || sex == "")
- fail = "Fill out all fields";
- else if (name.length <= 3 || name.length > 30)
-  fail = "Input the proper name";
- else if (pass.length <= 4 || pass.length > 30)
-  fail = "The password is incorrect! Please provide yourself with longer or shorter password";
- else if (pass != repass)
- fail = "Passwords don't match!";
- else if (pass.split("&").length > 1)
-   fail = "Wrong password!";
+if(fname == "" || lname == "" || sex == "" || nkontaktowy == "" || email == ""
+|| kraj == "")
+ fail = "Wypełnij wszystkie pola!";
+ else if (fname.length <= 3 || fname.length > 25)
+ fail = "Wpisz właściwe imię";
+ else if (lname.length <= 3 || lname.length > 25)
+ fail = "Wpisz właściwe nazwisko";
+ else if (isNaN(nkontaktowy) || nkontaktowy.length <= 8 )
+ fail = "Niepoprawny numer telefonu!"
+ else if (pattern.test(email) == false || email.length < 9 || email.length >= 35)
+ fail = "Niepoprawny adres skrzyńki pocztowej!";
 
 if (fail != "") {
   document.getElementById('error').innerHTML = fail;
 } else {
-  alert ("All data has been filled our properly");
-  window.location = 'G:/Programming/www/law_site/index.html';
+  alert ("Zgłoszenie zostało zarejestrowane!");
+  window.location = '../index.html';
 }
 // return false;
 }
