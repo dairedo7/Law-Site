@@ -37,12 +37,16 @@
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
-  font-weight: bold;
   align-content: center;
 }
 .navbar a:hover {
     background-color: DodgerBlue;
     color: white;
+  }
+.container {
+      border-radius: 5px;
+      background-color: NavajoWhite;
+      padding: 20px;
   }
 .application_form h3 {
   text-align: center;
@@ -70,12 +74,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
-.container {
-    border-radius: 5px;
-    background-color: NavajoWhite;
-    padding: 20px;
-}
 .footer {
   display: flex;
   flex-direction: column;
@@ -94,7 +92,7 @@ display: wrap;
 flex-wrap: wrap;
 width: 100%;
 text-align: left;
-padding-top: 50px;
+padding-top: 30px;
 font-size: 18px;
 }
 .footer {
@@ -108,6 +106,36 @@ font-size: 18px;
 .footer__contacts {
   display: flex;
   width: 100%;
+  align-items: center;
+}
+.footer__call_contacts {
+display: flex;
+flex-direction: row;
+width: 100%;
+text-align: center;
+color: darkslateblue;
+margin-right: 5px;
+margin-top: 15px;
+font-family: Arial, sans-serif;
+justify-content: space-around;
+font-size: 15px;
+font-weight: bold;
+}
+.button__text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.button__img {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.button__text:hover {
+  color: white;
+}
+.button__text:active {
+  color: red;
 }
 .footer__logos-container {
   display: flex;
@@ -152,10 +180,6 @@ font-size: 18px;
   }
 }
 @media (max-width: 640px) {
-  .header {
-    width: 100%;
-    background-size: 650px 500px;
-  }
   .footer__logos-container {
     flex-direction: column;
     align-items: center;
