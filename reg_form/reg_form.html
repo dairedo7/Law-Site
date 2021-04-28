@@ -31,7 +31,7 @@
     <h3>Formularz kontaktowy</h3>
 
     <div class="container">
-      <form id="reg__form" method="post">
+      <form action="reg_form/mail.php" id="reg__form" method="POST">
         <label for="fname">Imię</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
@@ -59,7 +59,7 @@
         <label for="subject">Szczegóły zgłoszenia</label>
         <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-        <input type="submit" name="submit" value="Submit" href="mailto:vladik719@gmail.com">
+        <button type="submit" name="submit" value="Submit" href="mailto:vladik719@gmail.com">Submit</button>
         <div id="error" style="color: red"></div>
       </form>
     </div>
