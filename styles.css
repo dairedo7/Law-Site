@@ -20,7 +20,7 @@
   color: Cornsilk;
 }
 .header p {
-  color: Bisque;
+  color: BurlyWood;
 }
 .header :is(h1, p) {
   font-size: 40px;
@@ -48,7 +48,7 @@
 }
 .jak-dzialamy {
   display: flex;
-  background-color: NavajoWhite; /*  // rgba(0, 0, 255, .5) */
+  background-color: Cornsilk; /*  // rgba(0, 0, 255, .5) */
   /* top > right > bottom > left */
   padding: 60px 30px;
   display: flex;
@@ -264,7 +264,7 @@ font-weight: bold;
 @media (max-width: 640px) {
   .header {
     width: 100%;
-    background-size: 650px 500px;
+    background-size: 1050px 500px;
   }
   .footer__logos-container {
     flex-direction: column;
@@ -285,7 +285,7 @@ font-weight: bold;
   }
   .jak-dzialamy__img_left {
   display: flex;
-  height:250px;
+  height: 250px;
   align-content: center;
   margin: 0px;
   }

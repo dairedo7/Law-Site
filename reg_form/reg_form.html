@@ -7,7 +7,7 @@
   <title>Registration</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="normalize.css">
-  <?php include_once(""); ?>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="page">
   <header class="header">
@@ -59,7 +59,7 @@
         <label for="subject">Szczegóły zgłoszenia</label>
         <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
-        <button type="submit" name="submit" value="Submit" href="mailto:vladik719@gmail.com">Submit</button>
+        <button type="submit" name="submit" value="Submit">Submit</button>
         <div id="error" style="color: red"></div>
       </form>
     </div>
@@ -108,5 +108,9 @@
      </div>
    </div>
  </footer>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>

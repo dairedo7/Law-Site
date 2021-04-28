@@ -1,23 +1,28 @@
 //Creating forms
-document.getElementById('reg__form');
-addEventListener("submit", checkForm);
+
 //Обработчик события адд ивент лисенер вешается на обьект определенный по ид
 //или классу.
-function validation ()
-{
-  var form = document.getELementById("reg__form");
-  var email = document.getELementById("email").value;
+// function validation ()
+// {
+//   var form = document.getELementById("reg__form");
+//   var email = document.getELementById("email").value;
+//
+//   var text = document.getELementById("text");
+//   var pattern = /^[^ ]+@+[a-z]{3,7}\.[a-z]{2,3}/;
+//   //   if (email.match(pattern)){
+//   //     form.classList.add("valid");
+//   //   }
+//   //   else {
+//   //     form.classList.remove("valid");
+//   //   }
+//   // }
+// }
 
-  var text = document.getELementById("text");
-  var pattern = /^[^ ]+@+[a-z]{3,7}\.[a-z]{2,3}/;
-  //   if (email.match(pattern)){
-  //     form.classList.add("valid");
-  //   }
-  //   else {
-  //     form.classList.remove("valid");
-  //   }
-  // }
-}
+
+
+document.getElementById('reg__form');
+addEventListener("submit", checkForm);
+
 function checkForm(element) {
 event.preventDefault();
 var el = document.getElementById('reg__form');
@@ -49,5 +54,5 @@ if (fail != "") {
   alert ("Zgłoszenie zostało zarejestrowane!");
   window.location = '../index.html';
 }
-// return false;
+ return false;
 }
