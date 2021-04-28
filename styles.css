@@ -3,7 +3,7 @@
 }
 .page {
   color: DarkSlateGrey;
-  font-family: serif;
+  font-family: Verdana;
   background-color: NavajoWhite;
 }
 .header {
@@ -83,6 +83,17 @@
   height: 230px;
   width: 330px;
   justify-content: center;
+}
+.text__creed {
+  font-size: 18px;
+}
+.nr_kontaktowe_link {
+  color:DarkSlateGrey;
+  text-decoration: none;
+
+}
+.nr_kontaktowe_link:hover {
+  color: black;
 }
 .jak-dzialamy__sandglass_img_left {
   margin: 75px 0px 0px 275px;
