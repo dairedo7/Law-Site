@@ -4,7 +4,7 @@
 .page {
   color: DarkSlateGrey;
   font-family: serif;
-  background-color: NavajoWhite;
+  background-color: Cornsilk;
 }
 .header {
   width: 100%;
@@ -19,7 +19,7 @@
   color: Cornsilk;
 }
 .header p {
-  color: Bisque;
+  color: BurlyWood;
 }
 .header :is(h1, p) {
   font-size: 40px;
@@ -45,7 +45,7 @@
   }
 .container {
       border-radius: 5px;
-      background-color: NavajoWhite;
+      background-color: Cornsilk;
       padding: 20px;
   }
 .application_form h3 {
@@ -180,6 +180,10 @@ font-weight: bold;
   }
 }
 @media (max-width: 640px) {
+
+  .header {
+    padding: 100px;
+  }
   .footer__logos-container {
     flex-direction: column;
     align-items: center;
