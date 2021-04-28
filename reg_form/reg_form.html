@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
+  <?php include_once(""); ?>
+</head>
+<body class="page">
+  <header class="header">
+    <h1>Venturion Law Firm</h1>
+    <p>Oficjalna strona internetowa firmy</p>
+  </header>
+  <div class="navbar">
+      <a href="../index.html">Pomoc prawna</a>
+      <a href="reg_form.html">Kontakt</a>
+  </div>
+  <script src="main.js"></script>
+
+<!--  <span class="simple-text">Text 1</span>
+    <span class="simple-text">Text 2</span>
+      <span class="simple-text">Text 3</span>
+      !-->
+ <main>
+   <br>
+  <section class="application_form">
+
+    <h3>Formularz kontaktowy</h3>
+
+    <div class="container">
+      <form id="reg__form" method="post">
+        <label for="fname">Imię</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+        <label for="lname">Nazwisko</label>
+        <input type="text" id="lname" name="lastname"
+        placeholder="Your last name..."> <br>
+
+        <input type="radio" name="sex" id="sex" value="Male">
+        <label for="male">Mężczyzna</label>
+        <input type="radio" name="sex" id="sex" value="Female">
+        <label for="female">Kobieta</label> <br><br>
+
+        <label for="numer__kontaktowy">Numer kontaktowy</label>
+        <input type="text" id="numer__kontaktowy" name="nkontaktowy"
+        placeholder="Leave your number here...">
+        <label for="email">E-mail:</label> <br> <br>
+        <input type="text" id="email" name="email" placeholder="Your email..."> <br> <br>
+
+        <label for="country">Kraj</label>
+        <select id="country" name="country">
+          <option value="polska">Polska</option>
+          <option value="ukraina">Ukraina</option>
+        </select>
+
+        <label for="subject">Szczegóły zgłoszenia</label>
+        <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+
+        <input type="submit" name="submit" value="Submit" href="mailto:vladik719@gmail.com">
+        <div id="error" style="color: red"></div>
+      </form>
+    </div>
+   </form>
+  </section>
+ </main>
+  <footer class="footer">
+   <div class="navbar">
+      <!-- Replace to nav tag -->
+        <a href="G:/Programming/www/law_site/index.html">Pomoc prawna</a>
+        <!-- the names of the folders and files should be written with "-" -->
+        <a href="reg_form/reg_form.html">Kontakt</a>
+   </div>
+   <div class="footer__contacts">
+     <h2 class="footer__text">Chcesz dowiedzieć się więcej co do przedstawionej przez nas oferty? Skontaktuj się z nami w jeden z wymienionych sposobów</h2>
+     <div class="footer__call_contacts">
+       <a class="button__text" href="mailto:iustitia@gmail.com" target="_self" data-label="iustitia@gmail.com">
+         <img class="button__img" src="../mail_img.png" href="mailto:iustitia@gmail.com" target="_self">
+          <span>iustitia@gmail.com</span>
+       </a> <br>
+       <a class="button__text" href="tel:+380679504411" target="_self" data-label="+380679504411">
+         <img class="button__img" src="../call_img.png" href="mailto:iustitia@gmail.com" target="_self">
+         <span class="button__text">+380 67 950 4411</span>
+       </a> <br>
+       <a class="button__text" href="tel:+48886516270" target="_self" data-label="+48886516270">
+         <img class="button__img" src="../call_img.png" href="mailto:iustitia@gmail.com" target="_self">
+         <span>+48 886 516 270</span>
+       </a> <br>
+     </div>
+     <div class="footer__logos-container">
+       <a class="footer__link" href="https://www.facebook.com/">
+         <img src="fb.png"
+              class="footer__logo"
+              alt="Facebook-image">
+       </a>
+       <a class="footer__link" href="https://www.facebook.com/">
+          <img src="tg.png"
+               class="footer__logo"
+               alt="Telegram-image">
+       </a>
+        <a class="footer__link" href="https://www.whatsapp.com/">
+          <img src="wa.png"
+               class="footer__logo"
+               alt="WhatsApp-image">
+       </a>
+     </div>
+   </div>
+ </footer>
+</body>
+</html>
