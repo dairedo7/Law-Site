@@ -178,6 +178,10 @@ font-weight: bold;
     background-size: 350px;
     background-position: 160% 25%;
   }
+  .footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
 }
 @media (max-width: 640px) {
 
@@ -185,7 +189,7 @@ font-weight: bold;
     padding: 100px;
   }
   .footer__logos-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .page {
@@ -204,6 +208,10 @@ font-weight: bold;
     width: 100%;
     flex-wrap: wrap;
   }
+  .footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
   .footer__link {
     padding: 0px;
     display: flex;

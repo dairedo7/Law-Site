@@ -18,7 +18,6 @@
       <a href="../index.html">Pomoc prawna</a>
       <a href="reg_form.html">Kontakt</a>
   </div>
-  <script src="main.js"></script>
 
 <!--  <span class="simple-text">Text 1</span>
     <span class="simple-text">Text 2</span>
@@ -31,7 +30,25 @@
     <h3>Formularz kontaktowy</h3>
 
     <div class="container">
-      <form action="mail.php" id="reg__form" method="POST">
+            <form id="reg__form" method="POST">
+        <label for="name">Imię</label>
+        <input id="name" type="text" name="name" placeholder="Input your name" class="form-control">
+        <label for="email">E-mail:</label> <br>
+        <input id="email" type="email" name="email" placeholder="Email" class="form-control">
+        <label for="country">Kraj</label>
+        <select id="country" name="country">
+          <option value="polska">Polska</option>
+          <option value="ukraina">Ukraina</option>
+        </select>
+        <label for="phone">Numer kontaktowy</label>
+        <input id="phone" type="phone" name="phone" placeholder="Phone number" class="form-control">
+        <label for="subject">Treść zgłoszenia</label>
+        <textarea id="message" name="message" placeholder="Your message..." class="form-control" style="height:200px">
+        </textarea>
+        <button type="button" id="sendMail" name="button" class="btn btn-success">Submit</button>
+        <div id="error" style="color: red"></div>
+
+<!--       <form action="mail.php" id="reg__form" method="POST">
         <label for="fname">Imię</label>
         <input type="text" id="fname" name="firstname" placeholder="Your name...">
 
@@ -60,10 +77,9 @@
         <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
 
         <button type="submit" name="submit" value="Submit">Submit</button>
-        <div id="error" style="color: red"></div>
+        <div id="error" style="color: red"></div> -->
       </form>
     </div>
-   </form>
   </section>
  </main>
   <footer class="footer">
@@ -109,8 +125,6 @@
    </div>
  </footer>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+     <script src="main.js"></script>
 </body>
 </html>
