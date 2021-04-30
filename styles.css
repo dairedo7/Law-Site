@@ -267,7 +267,7 @@ font-weight: bold;
     background-size: 1050px 500px;
   }
   .footer__logos-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .page {
