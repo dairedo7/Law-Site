@@ -63,6 +63,7 @@ $("#sendMail").on("click", function() {
   var country = $("#country").val().trim();
   var phone = $("#phone").val().trim();
   var message = $("#message").val().trim();
+  var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   if (email.length < 6) {
   	$("#error").text("Wpisz poprawny email!");
@@ -83,6 +84,14 @@ $("#sendMail").on("click", function() {
     $("#error").text("Napisz szczegóły zgłoszenia!");
   	return false;
   }
+   else if (pattern.test(email) == false || email.length < 9 || email.length >= 35){
+    $("#error").text("Niepoprawny adres skrzyńki pocztowej!");
+    return false;
+}
+   else if (isNaN(phone) || phone.length <= 8 ) {
+    $("#error").text("Niepoprawny numer telefonu!");
+    return false;
+   }
 
   $("#error").text("");
 
