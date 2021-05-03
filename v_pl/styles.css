@@ -4,7 +4,8 @@
 .page {
   color: DarkSlateGrey;
   font-family: serif;
-  background-color: Cornsilk;
+  background-color: NavajoWhite;
+
 }
 .header {
   display: flex;
@@ -21,7 +22,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 25px 10px 10px;
+  padding: 10px;
   align-content: center;
 }
 
@@ -29,7 +30,7 @@
   font-size: 25px;
   color: BurlyWood;
   text-shadow: 1px 1px black;
-  font-weight:;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -42,20 +43,19 @@
 .page__language:active {
   color: red;
 }
+
+.header :is(h1, p) {
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+  font-family: serif, sans-serif, arial;
+}
 .header h1 {
   color: Cornsilk;
-  font-weight: bold;
-
 }
 .header p {
   color: BurlyWood;
 }
-.header :is(h1, p) {
-  font-size: 40px;
-  padding: 20px;
-  font-family: serif, sans-serif, arial;
-  text-shadow: 2px 2px black;
-}
+
 .navbar {
   display: flex;
   background-color: DeepSkyBlue;
@@ -69,41 +69,113 @@
   text-decoration: none;
   text-align: center;
   align-content: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 .navbar a:hover {
-    background-color: DodgerBlue;
-    color: white;
-  }
-.container {
-      border-radius: 5px;
-      background-color: Cornsilk;
-      padding: 20px;
-  }
-.application_form h3 {
-  text-align: center;
+  background-color: DodgerBlue;
+  color: white;
 }
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+.jak-dzialamy {
+  display: flex;
+  background-color: Cornsilk; /*  // rgba(0, 0, 255, .5) */
+  /* top > right > bottom > left */
+  padding: 60px 30px;
+  display: flex;
+  align-content: center;
+}
+.jak-dzialamy__left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-right: 30px;
+}
+.hovered_text:hover {
+  color: white;
+}
+.jak-dzialamy__right-container {
+  max-width: calc(70% - 30px);
+  min-width: calc(70% - 30px);
+  padding-left: 10px;
+  background: url(pchdotted-1.png);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 
-button[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+/* .jak-dzialamy__img {
+  width: auto;
+  height: 250px;
+  width: 650px;
+  align-content: center;
+} */
+.jak-dzialamy__img_left {
+  height: 230px;
+  width: 330px;
+  justify-content: center;
+}
+.text__creed {
+  font-size: 18px;
+}
+.nr_kontaktowe_link {
+  color:DarkSlateGrey;
+  text-decoration: none;
+
+}
+.nr_kontaktowe_link:hover {
+  color: black;
+}
+.jak-dzialamy__sandglass_img_left {
+  margin: 75px 0px 0px 275px;
+  height:550px;
 }
 
-button[type=submit]:hover {
-    background-color: #45a049;
+.jak-dzialamy__right-container > * {
+  display: flex;
+  width: 100%;
+}
+.dzialamy__img {
+  margin: 20px;
+}
+.why-we__img {
+  margin: 23px;
+}
+.stand-out__img {
+  margin: 23px;
+}
+.safety__img {
+  margin: 30px;
+}
+.dane-kontaktowe {
+  color:red;
+  cursor: pointer;
+}
+.save-money__img {
+  margin: 24px;
+}
+.item__text {
+  padding-top: 15px;
+}
+.item__text:hover {
+  color: white;
+}
+.jak-dzialamy__images-container {
+  width: 20%;
+}
+.jak-dzialamy__text-container {
+  width: 50%;
+}
+.text__creed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main {
+  display: flex;
 }
 .footer {
   display: flex;
@@ -119,7 +191,6 @@ button[type=submit]:hover {
 }
 .footer__text {
 color: DarkSlateBlue;
-font-weight: bold;
 display: wrap;
 flex-wrap: wrap;
 width: 100%;
@@ -157,7 +228,6 @@ font-weight: bold;
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: blue;
 }
 .button__img {
   width: 30px;
@@ -181,23 +251,32 @@ font-weight: bold;
 }
 .footer__link:hover {
   color: white;
+  border-width: 50%;
+  border-radius: 25px;
 }
 .footer__logo:hover {
   border: 2px solid white;
   color: white;
+    border-radius: 25px;
 }
 .footer__logo {
   justify-content: flex-start;
-  padding-top: 35px;
   margin: 20px;
   height: 70 px;
   width: 30px;
 }
+
 @media (max-width: 1054px) {
   .page {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   /* .jak-dzialamy__img {
     width: 60%;
@@ -211,31 +290,18 @@ font-weight: bold;
     background-size: 350px;
     background-position: 160% 25%;
   }
-  .footer__contacts {
-  display: flex;
-  flex-direction: column;
-}
 }
 @media (max-width: 640px) {
   .header {
+    flex-direction: row;
     width: 100%;
     background-size: 800px 570px;
     background-repeat: no-repeat;
     background-position: center;
     flex-wrap: wrap;
   }
-/*  .header {
-    padding: 100px;
-    width: 600px;
-    height: 350px;
-    background-position: center ;
-  }
-  .header > * {
-    align-items: center;
-    width: 80%;
-  }*/
-   .page {
-    height: auto;
+  .languages {
+    font-size: 15px;
   }
   .footer__logos-container {
     flex-direction: row;
@@ -249,6 +315,49 @@ font-weight: bold;
     text-align: center;
     align-items: center;
   }
+  .jak-dzialamy__left-container {
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+  }
+  .jak-dzialamy__img_left {
+  display: flex;
+  height: 250px;
+  align-content: center;
+  margin: 0px;
+  }
+  .jak-dzialamy__right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(pchdotted-1.png);
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: 3000% 40%;
+    max-width: 100%;;
+    padding-left: 0px;
+}
+  .jak-dzialamy__img {
+    width: 100%;
+  }
+  .jak-dzialamy__images-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .jak-dzialamy__sandglass_img_left {
+    height: 250px;
+    padding: 0px;
+    margin: 75px 140px 0px 295px;
+  }
+  .dzialamy__img {
+    margin: 14px;
+  }
+  .stand-out__img {
+    margin: 17px;
+  }
   .footer {
     width: auto;
   }
@@ -257,10 +366,6 @@ font-weight: bold;
     width: 100%;
     flex-wrap: wrap;
   }
-  .footer__contacts {
-  display: flex;
-  flex-direction: column;
-}
   .footer__link {
     padding: 0px;
     display: flex;

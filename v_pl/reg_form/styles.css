@@ -29,7 +29,7 @@
   font-size: 25px;
   color: BurlyWood;
   text-shadow: 1px 1px black;
-  font-weight:;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -67,6 +67,7 @@
   color: DarkSlateGrey;
   padding: 14px 20px;
   text-decoration: none;
+  font-weight: bold;
   text-align: center;
   align-content: center;
 }

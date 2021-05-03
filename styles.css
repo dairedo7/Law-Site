@@ -8,13 +8,46 @@
 
 }
 .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 500px;
   text-align: center;
-  padding-top: 150px;
   background-image: url(background_pic.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+}
+.languages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  align-content: center;
+}
+
+.language__par a {
+  font-size: 25px;
+  color: BurlyWood;
+  text-shadow: 1px 1px black;
+  font-weight:;
+  text-decoration: none;
+}
+
+.page__language {
+  color:Cornsilk;
+}
+.page__language:hover {
+  color: Cornsilk;
+}
+.page__language:active {
+  color: red;
+}
+
+.header :is(h1, p) {
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+  font-family: serif, sans-serif, arial;
 }
 .header h1 {
   color: Cornsilk;
@@ -22,10 +55,7 @@
 .header p {
   color: BurlyWood;
 }
-.header :is(h1, p) {
-  font-size: 40px;
-  font-family: serif, sans-serif, arial;
-}
+
 .navbar {
   display: flex;
   background-color: DeepSkyBlue;
@@ -263,11 +293,15 @@ font-weight: bold;
 }
 @media (max-width: 640px) {
   .header {
+    flex-direction: row;
     width: 100%;
     background-size: 800px 570px;
     background-repeat: no-repeat;
     background-position: center;
     flex-wrap: wrap;
+  }
+  .languages {
+    font-size: 15px;
   }
   .footer__logos-container {
     flex-direction: row;
