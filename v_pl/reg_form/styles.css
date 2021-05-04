@@ -189,7 +189,7 @@ font-weight: bold;
 }
 .footer__logo {
   justify-content: flex-start;
-  padding-top: 35px;
+  border-radius: 20px;
   margin: 20px;
   height: 70 px;
   width: 30px;
@@ -220,9 +220,10 @@ font-weight: bold;
 @media (max-width: 640px) {
   .header {
     width: 100%;
-    background-size: 800px 570px;
+    background-image: url(background_pic_mobiles.jpeg);
+    background-position: top;
+    background-size: 650px 870px;
     background-repeat: no-repeat;
-    background-position: center;
     flex-wrap: wrap;
   }
 /*  .header {
