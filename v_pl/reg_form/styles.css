@@ -29,7 +29,7 @@
   font-size: 25px;
   color: BurlyWood;
   text-shadow: 1px 1px black;
-  font-weight: bold;
+  font-weight:;
   text-decoration: none;
 }
 
@@ -65,9 +65,9 @@
 }
 .navbar a {
   color: DarkSlateGrey;
+  font-weight: bold;
   padding: 14px 20px;
   text-decoration: none;
-  font-weight: bold;
   text-align: center;
   align-content: center;
 }
@@ -225,6 +225,12 @@ font-weight: bold;
     background-size: 650px 870px;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+  }
+  .jak-dzialamy__text-container {
+    width: 80%;
+  }
+  .jak-dzialamy__text-container ul {
+    text-align: left;
   }
 /*  .header {
     padding: 100px;

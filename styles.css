@@ -144,14 +144,14 @@
   margin: 23px;
 }
 .safety__img {
-  margin: 30px;
+  margin: 10px;
 }
 .dane-kontaktowe {
   color:red;
   cursor: pointer;
 }
 .save-money__img {
-  margin: 24px;
+  margin: 15px;
 }
 .item__text {
   padding-top: 15px;
@@ -300,6 +300,12 @@ font-weight: bold;
     background-size: 650px 870px;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+  }
+  .jak-dzialamy__text-container {
+    width: 80%;
+  }
+  .jak-dzialamy__text-container ul {
+    text-align: left;
   }
   .languages {
     font-size: 15px;
