@@ -3,7 +3,7 @@
 }
 .page {
   color: DarkSlateGrey;
-  font-family: serif;
+  font-family: monospace,serif;
   background-color: NavajoWhite;
 
 }
@@ -91,7 +91,7 @@
   margin-right: 30px;
 }
 .hovered_text:hover {
-  color: white;
+  color: blue;
 }
 .jak-dzialamy__right-container {
   max-width: calc(70% - 30px);
@@ -157,7 +157,7 @@
   padding-top: 15px;
 }
 .item__text:hover {
-  color: white;
+  color: Coral;
 }
 .jak-dzialamy__images-container {
   width: 20%;
@@ -301,6 +301,15 @@ font-weight: bold;
     background-repeat: no-repeat;
     flex-wrap: wrap;
   }
+  .jak-dzialamy__right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    max-width: 100%;;
+    padding-left: 0px;
+}
   .jak-dzialamy__text-container {
     width: 80%;
   }
@@ -333,18 +342,6 @@ font-weight: bold;
   align-content: center;
   margin: 0px;
   }
-  .jak-dzialamy__right-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: url(pchdotted-1.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: 3000% 40%;
-    max-width: 100%;;
-    padding-left: 0px;
-}
   .jak-dzialamy__img {
     width: 100%;
   }

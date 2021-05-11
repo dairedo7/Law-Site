@@ -3,7 +3,7 @@
 }
 .page {
   color: DarkSlateGrey;
-  font-family: serif;
+  font-family: monospace, serif;
   background-color: Cornsilk;
 }
 .header {
