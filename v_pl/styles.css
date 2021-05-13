@@ -91,7 +91,7 @@
   margin-right: 30px;
 }
 .hovered_text:hover {
-  color: white;
+  color: Coral;
 }
 .jak-dzialamy__right-container {
   max-width: calc(70% - 30px);
@@ -157,7 +157,7 @@
   padding-top: 15px;
 }
 .item__text:hover {
-  color: white;
+  color: Coral;
 }
 .jak-dzialamy__images-container {
   width: 20%;

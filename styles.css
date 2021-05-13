@@ -91,7 +91,7 @@
   margin-right: 30px;
 }
 .hovered_text:hover {
-  color: blue;
+  color: Coral;
 }
 .jak-dzialamy__right-container {
   max-width: calc(70% - 30px);
@@ -153,14 +153,14 @@
 .save-money__img {
   margin: 15px;
 }
+.jak-dzialamy__images-container {
+  width: 20%;
+}
 .item__text {
   padding-top: 15px;
 }
 .item__text:hover {
   color: Coral;
-}
-.jak-dzialamy__images-container {
-  width: 20%;
 }
 .jak-dzialamy__text-container {
   width: 50%;
