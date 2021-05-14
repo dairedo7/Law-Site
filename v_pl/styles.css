@@ -4,7 +4,7 @@
 .page {
   color: DarkSlateGrey;
   font-family: monospace,serif;
-  background-color: NavajoWhite;
+  background-color: Cornsilk;;
 
 }
 .header {
@@ -58,6 +58,7 @@
 .navbar {
   display: flex;
   background-color: DeepSkyBlue;
+  margin-bottom: 40px;
 }
 .navbar > * {
   flex: 100%;
@@ -74,6 +75,80 @@
 .navbar a:hover {
   background-color: DodgerBlue;
   color: white;
+}
+.services__container {
+  display: flex;
+  flex-direction: column;
+/*  grid-template-columns: 500px 180px 180px 180px;
+  grid-template-areas: (services_title services_title services_title)
+                       (services__help services__work services__disputes)
+                       (services__help services__work services__disputes);*/
+  height: 550px;
+  background-image: url(chess_bg.jpg);
+  background-size: 2000px 1050px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-shadow: 15px 5px 15px 20px grey;
+  color: Cornsilk;
+  margin-bottom: 30px;
+  justify-content: center;
+  padding: 0;
+  border-radius: 15px;
+}
+.services_title {
+  font-size: 36px;
+  font-family: Verdana;
+  font-style: oblique;
+  -webkit-text-stroke: 1px white;
+  align-self: center;
+  color: Crimson;
+/*  text-shadow: 2px 2px2grey;*/
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 20px;
+}
+.services_list__container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  align-content: center;
+  justify-content: center;
+  padding: 50px 10px 20px 10px;
+  justify-content: space-around;
+}
+.services_img {
+  align-content: center;
+  background-color: azure;
+  border-radius: 25px;
+  opacity: 85%;
+}
+.services_list {
+  list-style: none;
+  background: WhiteSmoke;
+  color: black;
+  opacity: 85%;
+  padding: 10px;
+  border-radius: 35px;
+}
+.services_list li {
+  padding-bottom: 10px;
+}
+.services__help {
+  text-align: center;
+  max-width: 400px;
+  margin-right: 5px;
+}
+
+.services__work {
+  text-align: center;
+  max-width: 400px;
+  margin-right: 5px;
+}
+.services__disputes {
+  text-align: center;
+  max-width: 500px;
 }
 .jak-dzialamy {
   display: flex;
@@ -178,6 +253,9 @@
 .main {
   display: flex;
 }
+footer {
+  margin-top: 40px;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -199,6 +277,7 @@ text-align: left;
 padding-top: 30px;
 font-size: 18px;
 }
+
 .footer {
   display: flex;
   font-family: Arial, sans-serif;
