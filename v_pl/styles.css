@@ -414,22 +414,30 @@ footer {
 
 @media (max-width: 640px) {
   .header {
-    width: 100%;
+    width: 104%;
     background-image: url(background_pic_mobiles.jpeg);
     background-position: top;
     background-size: 650px 870px;
     background-repeat: no-repeat;
     flex-wrap: wrap;
   }
+  .navbar {
+    width: 104%;
+  }
+  .services__container {
+    margin-left: 10px;
+    background-size: 800px 900px;
+  }
   .services_title {
     font-size: 26px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     text-align: center;
 
   }
   .services_img {
     padding: 10px 10px;
-    width: 65%;
+    margin-bottom: 30px;
+    width: 85%;
     height: auto;
     align-self: center;
 
@@ -511,7 +519,7 @@ footer {
     margin: 17px;
   }
   .footer {
-    width: auto;
+    width: 104%;
   }
   .footer .navbar {
     display: flex;
@@ -526,14 +534,21 @@ footer {
     width: 100%;
   }
 }
-@media (max-width: 395px) {
+@media (max-width: 360px) {
   .header {
-    width: 100%;
+    width: 113%;
     background-image: url(background_pic_mobiles.jpeg);
     background-position: top;
     background-size: 650px 870px;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+  }
+  .navbar {
+        width: 113%;
+  }
+  .services__container {
+    margin-left: 35px;
+    background-size: 600px 800px;
   }
   .services_title {
     font-size: 24px;
@@ -558,3 +573,63 @@ footer {
     line-height: 0.81em;
     width: 40%;
   }
+  .jak-dzialamy__left-container {
+    width: 125%;
+    margin-left: 40px;
+  }
+
+  .jak-dzialamy__right-container {
+    width: 125%;
+    margin-left: 40px;
+  }
+  .footer {
+    width: 115%;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    width: 122%;
+  }
+  .navbar {
+    width: 122%;
+  }
+  .services__container {
+    width: 102%;
+    background-size: 600px 800px;
+  }
+  .services_title {
+    font-size: 24px;
+    margin-bottom: 60px;
+    text-align: center;
+
+  }
+  .services_img {
+    padding: 10px 10px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+
+  }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 0.81em;
+    width: 40%;
+  }
+  .jak-dzialamy__left-container {
+    width: 127%;
+    margin-left: 75px;
+  }
+
+  .jak-dzialamy__right-container {
+    width: 127%;
+    margin-left: 75px;
+  }
+  .footer {
+    width: 122%;
+  }
+}
