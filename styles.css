@@ -175,27 +175,22 @@
 .jak-dzialamy__right-container {
   max-width: calc(70% - 30px);
   min-width: calc(70% - 30px);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 
   background: url(pchdotted-1.png);
   background-size: 400px;
   background-repeat: no-repeat;
-  background-position:750px 50px;
+  background-position: top right;
   padding: 40px;
   padding-left: 80px;
   padding-bottom: 0;
   box-shadow: 5px 5px 15px 15px grey;
   background-color: rgba(241, 196, 15, 0.1);
+  background-attachment: fixed;
 }
 
-/* .jak-dzialamy__img {
-  width: auto;
-  height: 250px;
-  width: 650px;
-  align-content: center;
-} */
 .jak-dzialamy__img_left {
   height: 230px;
   width: 300px;
@@ -379,15 +374,23 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .footer__contacts {
+  .services__help,
+  .services__work,
+  .services__disputes {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    line-height: 0.81em;
+    width: 50%;
   }
-  /* .jak-dzialamy__img {
-    width: 60%;
-  } */
+  .services_title {
+    font-size: 30px;
+  }
+  .services_img {
+    align-self: center;
+
+  }
   .jak-dzialamy__img_left {
     width: 200px;
     height: auto;
@@ -399,6 +402,16 @@ footer {
     background-position: 120% 15%;
   }
 }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .jak-dzialamy__img {
+    width: 60%;
+  } */
+
 @media (max-width: 640px) {
   .header {
     width: 100%;
@@ -407,6 +420,30 @@ footer {
     background-size: 650px 870px;
     background-repeat: no-repeat;
     flex-wrap: wrap;
+  }
+  .services_title {
+    font-size: 26px;
+    margin-bottom: 60px;
+    text-align: center;
+
+  }
+  .services_img {
+    padding: 10px 10px;
+    width: 65%;
+    height: auto;
+    align-self: center;
+
+  }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 14px;
+    line-height: 0.81em;
+    width: 40%;
   }
   .jak-dzialamy__right-container {
     display: flex;
@@ -489,3 +526,35 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 395px) {
+  .header {
+    width: 100%;
+    background-image: url(background_pic_mobiles.jpeg);
+    background-position: top;
+    background-size: 650px 870px;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+  }
+  .services_title {
+    font-size: 24px;
+    margin-bottom: 60px;
+    text-align: center;
+
+  }
+  .services_img {
+    padding: 10px 10px;
+    width: 65%;
+    height: auto;
+    align-self: center;
+
+  }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 0.81em;
+    width: 40%;
+  }
