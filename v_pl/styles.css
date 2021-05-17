@@ -632,4 +632,9 @@ footer {
   .footer {
     width: 122%;
   }
+  .button__text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
+  }
 }

@@ -414,7 +414,7 @@ footer {
 
 @media (max-width: 640px) {
   .header {
-    width: 104%;
+    width: 100%;
     background-image: url(background_pic_mobiles.jpeg);
     background-position: top;
     background-size: 650px 870px;
@@ -422,10 +422,10 @@ footer {
     flex-wrap: wrap;
   }
   .navbar {
-    width: 104%;
+    width: 100%;
   }
   .services__container {
-    margin-left: 10px;
+    margin-left: 0;
     background-size: 800px 900px;
   }
   .services_title {
@@ -461,7 +461,7 @@ footer {
     background: none;
     margin-bottom: 20px;
     padding-left: 0px;
-    max-width: 400px;
+    max-width: 360px;
     padding-bottom: 20px;
     background-color: rgba(241, 196, 15, 0.1);
 }
@@ -488,7 +488,7 @@ footer {
   }
   .jak-dzialamy__left-container {
     display: flex;
-    width: 400px;
+    width: 360px;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -519,7 +519,7 @@ footer {
     margin: 17px;
   }
   .footer {
-    width: 104%;
+    width: 100%;
   }
   .footer .navbar {
     display: flex;
@@ -532,6 +532,11 @@ footer {
   }
   .footer__logos-container {
     width: 100%;
+  }
+  .button__text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
   }
 }
 @media (max-width: 360px) {
@@ -583,19 +588,25 @@ footer {
     margin-left: 40px;
   }
   .footer {
-    width: 115%;
+    width: 100%;
+  }
+  .button__text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
   }
 }
 @media (max-width: 320px) {
   .header {
-    width: 122%;
+    width: 100%;
   }
   .navbar {
-    width: 122%;
+    width: 100%;
   }
   .services__container {
-    width: 102%;
+    width: 100%;
     background-size: 600px 800px;
+    margin-left: 0;
   }
   .services_title {
     font-size: 24px;
@@ -621,15 +632,21 @@ footer {
     width: 40%;
   }
   .jak-dzialamy__left-container {
-    width: 127%;
-    margin-left: 75px;
+    width: 125%;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 
   .jak-dzialamy__right-container {
     width: 127%;
-    margin-left: 75px;
+    margin-left: 0;
   }
   .footer {
-    width: 122%;
+    width: 100%;
+  }
+  .button__text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
   }
 }

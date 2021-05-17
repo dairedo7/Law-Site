@@ -277,3 +277,74 @@ font-weight: bold;
     width: 100%;
   }
 }
+@media (max-width: 360px) {
+  .header {
+    width: 113%;
+    background-image: url(background_pic_mobiles.jpeg);
+    background-position: top;
+    background-size: 650px 870px;
+    background-repeat: no-repeat;
+    flex-wrap: wrap;
+  }
+  .navbar {
+        width: 113%;
+  }
+  .services__container {
+    margin-left: 35px;
+    background-size: 600px 800px;
+  }
+  .services_title {
+    font-size: 24px;
+    margin-bottom: 60px;
+    text-align: center;
+
+  }
+  .services_img {
+    padding: 10px 10px;
+    width: 65%;
+    height: auto;
+    align-self: center;
+
+  }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 11px;
+    line-height: 0.81em;
+    width: 40%;
+  }
+  .jak-dzialamy__left-container {
+    width: 125%;
+    margin-left: 40px;
+  }
+
+  .jak-dzialamy__right-container {
+    width: 125%;
+    margin-left: 40px;
+  }
+  .footer {
+    width: 115%;
+  }
+}
+@media (max-width: 320px) {
+  .header {
+    width: 100%;
+  }
+.header :is(h1, p) {
+    font-size: 32px;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .button__text {
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+}
