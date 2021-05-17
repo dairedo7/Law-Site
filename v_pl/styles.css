@@ -425,7 +425,8 @@ footer {
   }
   .services__container {
     margin-left: 0;
-    background-size: 800px 900px;
+    background-size: 800px 1100px;
+    width: 100%;
   }
   .services_title {
     font-size: 26px;
@@ -440,6 +441,18 @@ footer {
     height: auto;
     align-self: center;
   }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 13px;
+    padding: 2px;
+    line-height: 0.81em;
+    width: 40%;
+  }
   .jak-dzialamy__right-container {
     display: flex;
     flex-direction: column;
@@ -448,21 +461,11 @@ footer {
     background: none;
     margin-bottom: 20px;
     padding-left: 0px;
-    max-width: 600px;
+    max-width: 350px;
     padding-bottom: 20px;
     background-color: rgba(241, 196, 15, 0.1);
 }
-  .services__help,
-  .services__work,
-  .services__disputes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    font-size: 14px;
-    line-height: 0.81em;
-    width: 40%;
-  }
+
   .jak-dzialamy__text-container {
     width: 80%;
   }
@@ -486,13 +489,13 @@ footer {
   }
   .jak-dzialamy__left-container {
     display: flex;
-    width: 580px;
+    width: 350px;
     margin: 0;
     margin-bottom: 20px;
   }
   .jak-dzialamy__img_left {
     display: flex;
-    height: 250px;
+    height: 230px;
     width: 100%;
     align-content: center;
   }
@@ -508,7 +511,7 @@ footer {
   .jak-dzialamy__sandglass_img_left {
     height: 250px;
     padding: 0px;
-    margin: 75px 180px 0px 295px;
+    margin: 75px 190px 0px 295px;
   }
   .dzialamy__img {
     margin: 14px;
@@ -604,11 +607,31 @@ footer {
     width: 102%;
     margin-left: 0;
   }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    font-size: 11px;
+    padding: 2px;
+  }
   .services_img {
     padding: 10px 10px;
     width: 100%;
     height: auto;
     align-self: center;
+  }
+  .first_service_img {
+    width: 115%;
+    margin-right: 10px;
+    margin-left: 5px;
+  }
+  .first_service_text {
+    margin-right: 10px;
+  }
+  .second_service_text {
+    margin-top: 15px;
+  }
+  .third_service_text {
+    margin-top: 15px;
   }
   .jak-dzialamy__sandglass_img_left {
     height: 250px;
