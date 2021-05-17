@@ -362,9 +362,9 @@ footer {
 }
 .footer__logo {
   justify-content: flex-start;
- border-radi us: 20px;
+  border-radius: 20px;
   margin: 20px;
-  height: 70 px;
+  height: auto;
   width: 30px;
 }
 
@@ -401,7 +401,6 @@ footer {
     background-size: 350px;
     background-position: 120% 15%;
   }
-}
   .footer__contacts {
     display: flex;
     flex-direction: column;
@@ -411,7 +410,7 @@ footer {
   /* .jak-dzialamy__img {
     width: 60%;
   } */
-
+}
 @media (max-width: 640px) {
   .header {
     width: 100%;
