@@ -237,20 +237,14 @@ font-weight: bold;
     width: 600px;
     height: 350px;
     background-position: center ;
-  }
-  .header > * {
+  }*/
+/*  .header > * {
     align-items: center;
     width: 80%;
   }*/
-   .page {
-    height: auto;
-  }
   .footer__logos-container {
     flex-direction: row;
     align-items: center;
-  }
-  .page {
-    height: auto;
   }
   .jak-dzialamy {
     flex-direction: column;

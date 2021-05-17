@@ -440,8 +440,19 @@ footer {
     width: 85%;
     height: auto;
     align-self: center;
-
   }
+  .jak-dzialamy__right-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    max-width: 600px;
+    padding-bottom: 20px;
+    background-color: rgba(241, 196, 15, 0.1);
+}
   .services__help,
   .services__work,
   .services__disputes {
@@ -453,18 +464,6 @@ footer {
     line-height: 0.81em;
     width: 40%;
   }
-  .jak-dzialamy__right-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: none;
-    margin-bottom: 20px;
-    padding-left: 0px;
-    max-width: 360px;
-    padding-bottom: 20px;
-    background-color: rgba(241, 196, 15, 0.1);
-}
   .jak-dzialamy__text-container {
     width: 80%;
   }
@@ -488,15 +487,15 @@ footer {
   }
   .jak-dzialamy__left-container {
     display: flex;
-    width: 360px;
+    width: 580px;
     margin: 0;
     margin-bottom: 20px;
   }
   .jak-dzialamy__img_left {
-  display: flex;
-  height: 250px;
-  width: 100%;
-  align-content: center;
+    display: flex;
+    height: 250px;
+    width: 100%;
+    align-content: center;
   }
   .jak-dzialamy__img {
     width: 100%;
@@ -510,7 +509,7 @@ footer {
   .jak-dzialamy__sandglass_img_left {
     height: 250px;
     padding: 0px;
-    margin: 75px 140px 0px 295px;
+    margin: 75px 180px 0px 295px;
   }
   .dzialamy__img {
     margin: 14px;
@@ -549,24 +548,22 @@ footer {
     flex-wrap: wrap;
   }
   .navbar {
-        width: 113%;
+    width: 113%;
   }
   .services__container {
-    margin-left: 35px;
+    width: 113%;
     background-size: 600px 800px;
   }
   .services_title {
     font-size: 24px;
     margin-bottom: 60px;
     text-align: center;
-
   }
   .services_img {
     padding: 10px 10px;
-    width: 65%;
+    width: 100%;
     height: auto;
     align-self: center;
-
   }
   .services__help,
   .services__work,
@@ -578,6 +575,7 @@ footer {
     line-height: 0.81em;
     width: 40%;
   }
+
   .jak-dzialamy__left-container {
     width: 125%;
     margin-left: 40px;
@@ -588,7 +586,7 @@ footer {
     margin-left: 40px;
   }
   .footer {
-    width: 100%;
+    width: 113%;
   }
   .button__text {
     flex-wrap: wrap;
@@ -598,41 +596,28 @@ footer {
 }
 @media (max-width: 320px) {
   .header {
-    width: 100%;
+    width: 102%;
   }
   .navbar {
-    width: 100%;
+    width: 102%;
   }
   .services__container {
-    width: 100%;
-    background-size: 600px 800px;
+    width: 102%;
     margin-left: 0;
-  }
-  .services_title {
-    font-size: 24px;
-    margin-bottom: 60px;
-    text-align: center;
-
   }
   .services_img {
     padding: 10px 10px;
     width: 100%;
     height: auto;
     align-self: center;
-
   }
-  .services__help,
-  .services__work,
-  .services__disputes {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 11px;
-    line-height: 0.81em;
-    width: 40%;
+  .jak-dzialamy__sandglass_img_left {
+    height: 250px;
+    padding: 0px;
+    margin: 75px 220px 0px 295px;
   }
   .jak-dzialamy__left-container {
-    width: 125%;
+    width: 127%;
     margin-left: 0;
     margin-bottom: 0;
   }
@@ -642,11 +627,30 @@ footer {
     margin-left: 0;
   }
   .footer {
-    width: 100%;
+    width: 102%;
   }
-  .button__text {
-    flex-wrap: wrap;
+}
+@media (max-width: 280px) {
+  .header :is(h1, p) {
+    font-size: 30px;
+  }
+  .services__help,
+  .services__work,
+  .services__disputes {
+    display: flex;
     flex-direction: column;
-    padding-left: 5px;
+    flex-wrap: wrap;
+    font-size: 9px;
+    line-height: 0.81em;
+    width: 40%;
+  }
+  .jak-dzialamy__left-container {
+    width: 127%;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .jak-dzialamy__sandglass_img_left {
+    height: 200px;
+    margin: 75px 220px 0px 295px;
   }
 }
