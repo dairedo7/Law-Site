@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Registration</title>
+  <title>Залишити заявку</title>
   <link rel="icon" href="logo.png" type="image/gif" sizes="18x18">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="normalize.css">
@@ -13,14 +13,14 @@
 <body class="page">
   <header class="header">
     <div class="languages">
-     <p class="language__par"><a class="page__language" href="../v_pl/reg_form/reg_form.html">Zmienić język na: <b><u>Ukraiński</u></b></a></p>
+     <p class="language__par"><a class="page__language" href="../../reg_form/reg_form.html">Змінити мову на: <b><u>Польську</u></b></a></p>
     </div>
     <h1>Venturion Law Firm</h1>
-    <p>Oficjalna strona internetowa firmy</p>
+    <p>Офіційна Сторінка Фірми</p>
   </header>
   <nav class="navbar">
-      <a href="../index.html">Pomoc prawna</a>
-      <a href="reg_form.html">Kontakt</a>
+      <a href="../index.html">Юридична Допомога</a>
+      <a href="reg_form.html">Залишити заявку</a>
   </nav>
 
 <!--  <span class="simple-text">Text 1</span>
@@ -31,25 +31,25 @@
    <br>
   <section class="application_form">
 
-    <h3>Formularz kontaktowy</h3>
+    <h3>Форма заявки</h3>
 
     <div class="container">
-      <form id="reg__form" method="POST">
-        <label for="name">Imię</label>
+            <form id="reg__form" method="POST">
+        <label for="name">Ваше ім'я:</label>
         <input id="name" type="text" name="name" placeholder="Input your name" class="form-control">
-        <label for="email">E-mail:</label> <br>
+        <label for="email">Адреса вашої почтової скриньки:</label> <br>
         <input id="email" type="email" name="email" placeholder="Email" class="form-control">
-        <label for="country">Kraj</label>
+        <label for="country">Країна:</label>
         <select id="country" name="country">
-          <option value="polska">Polska</option>
-          <option value="ukraina">Ukraina</option>
+          <option value="polska">Польща</option>
+          <option value="ukraina">Україна</option>
         </select>
-        <label for="phone">Numer kontaktowy</label>
+        <label for="phone">Контактний телефон:</label>
         <input id="phone" type="phone" name="phone" placeholder="Phone number" class="form-control">
-        <label for="subject">Treść zgłoszenia</label>
+        <label for="subject">Зміст заяви:</label>
         <textarea id="message" name="message" placeholder="Your message..." class="form-control" style="height:200px">
         </textarea>
-        <button type="button" id="sendMail" name="button" class="btn btn-success">Submit</button>
+        <button type="button" id="sendMail" name="button" class="btn btn-success">Відправити</button>
         <div id="error" style="color: red"></div>
 
 <!--       <form action="mail.php" id="reg__form" method="POST">
@@ -89,15 +89,17 @@
   <footer class="footer">
    <nav class="navbar">
       <!-- Replace to nav tag -->
-        <a href="../index.html">Pomoc prawna</a>
+        <a href="../index.html">Юридична Допомога</a>
         <!-- the names of the folders and files should be written with "-" -->
-        <a href="reg_form.html">Kontakt</a>
+        <a href="reg_form.html">Залишити заявку</a>
    </nav>
    <div class="footer__contacts">
-     <h2 class="footer__text">Chcesz dowiedzieć się więcej co do przedstawionej przez nas oferty? Skontaktuj się z nami w jeden z wymienionych sposobów</h2>
+     <h2 class="footer__text">Хочете дізнатись більше про наші послуги?
+       Зв’яжіться з нами в один з запропонованих способів:
+     </h2>
      <div class="footer__call_contacts">
        <a class="button__text" href="mailto:venturionlawyer@gmail.com" target="_self" data-label="iustitia@gmail.com">
-         <img class="button__img" src="../mail_img.png" href="mailto:iustitia@gmail.com" target="_self">
+         <img class="button__img" src="../mail_img.png" href="mailto:venturionlawyer@gmail.com" target="_self">
           <span>venturionlawyer@gmail.com</span>
        </a> <br>
        <a class="button__text" href="tel:+380679504411" target="_self" data-label="+380679504411">

@@ -7,30 +7,30 @@ $("#sendMail").on("click", function() {
   var pattern = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 
   if (email.length < 6) {
-  	$("#error").text("Wpisz poprawny email!");
+  	$("#error").text("Впишіть правильну адресу e-mail!");
   	return false;
   } else if (name == "") {
-    $("#error").text("Wpisz imię!");
+    $("#error").text("Впишіть своє ім'я!");
   	return false;
   }
   else if (country == "") {
-    $("#error").text("Wpisz państwo!");
+    $("#error").text("Виберіть країну!");
   	return false;
   }
   else if (phone == "") {
-    $("#error").text("Wprowadź numer telefonu!");
+    $("#error").text("Введіть свій номер телефону!");
   	return false;
   }
     else if (message == "") {
-    $("#error").text("Napisz szczegóły zgłoszenia!");
+    $("#error").text("Вкажіть деталі заявки!");
   	return false;
   }
-   else if (pattern.test(email) == false){
-    $("#error").text("Niepoprawny adres skrzyńki pocztowej!");
+     else if (pattern.test(email) == false){
+    $("#error").text("Введений адрес почтової скриньки не існує!");
     return false;
 }
    else if (isNaN(phone) || phone.length <= 8 ) {
-    $("#error").text("Niepoprawny numer telefonu!");
+    $("#error").text("Не правильний формат номеру телефону!");
     return false;
    }
 
@@ -47,9 +47,9 @@ $("#sendMail").on("click", function() {
     },
     success: function(data) {
     	if(!data)
-    		alert("Wystąpił błąd. Wiadomość nie została wysłana");
+    		alert("Помилка! Заявка не вислана.");
     	else
-    		alert("Zgłoszenie zostało zarejestrowane!");
+    		alert("Заявка зареєстрована в системі!");
     		$("#reg__form").trigger("reset");
     	$("#sendMail").prop("disabled", false);
     }
