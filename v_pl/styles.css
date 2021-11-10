@@ -1,11 +1,12 @@
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 .page {
   color: DarkSlateGrey;
-  font-family: monospace,serif;
+  font-family: monospace, serif;
   background-color: Cornsilk;
 
+  line-height: 1.42;
 }
 .header {
   display: flex;
@@ -34,7 +35,7 @@
 }
 
 .page__language {
-  color:Cornsilk;
+  color: Cornsilk;
 }
 .page__language:hover {
   color: Cornsilk;
@@ -64,13 +65,12 @@
   flex: 100%;
 }
 .navbar a {
-  color: DarkSlateGrey;
   padding: 14px 20px;
+  color: DarkSlateGrey;
   text-decoration: none;
   text-align: center;
-  align-content: center;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 15px;
 }
 .navbar a:hover {
   background-color: DodgerBlue;
@@ -79,7 +79,7 @@
 .services__container {
   display: flex;
   flex-direction: column;
-/*  grid-template-columns: 500px 180px 180px 180px;
+  /*  grid-template-columns: 500px 180px 180px 180px;
   grid-template-areas: (services_title services_title services_title)
                        (services__help services__work services__disputes)
                        (services__help services__work services__disputes);*/
@@ -102,7 +102,7 @@
   -webkit-text-stroke: 1px white;
   align-self: center;
   color: Crimson;
-/*  text-shadow: 2px 2px2grey;*/
+  /*  text-shadow: 2px 2px2grey;*/
   margin: 0;
   padding: 0;
   padding-top: 10px;
@@ -200,9 +200,8 @@
   font-size: 18px;
 }
 .nr_kontaktowe_link {
-  color:DarkSlateGrey;
+  color: DarkSlateGrey;
   text-decoration: none;
-
 }
 .nr_kontaktowe_link:hover {
   color: black;
@@ -216,7 +215,6 @@
 .jak-dzialamy__right-container > * {
   display: flex;
   width: 100%;
-
 }
 /*.jak-dzialamy__right-container {
   display: grid;
@@ -272,13 +270,14 @@
   flex-direction: row;
 }
 .dane-kontaktowe {
-  color:red;
+  color: red;
   cursor: pointer;
 }
 .dane-kontaktowe:active {
   color: DarkRed;
   opacity: 0.7;
 }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -292,13 +291,13 @@
   font-size: 16px;
 }
 .footer__text {
-color: DarkSlateBlue;
-display: wrap;
-flex-wrap: wrap;
-width: 100%;
-text-align: left;
-padding-top: 30px;
-font-size: 18px;
+  color: DarkSlateBlue;
+  display: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: left;
+  padding-top: 30px;
+  font-size: 18px;
 }
 .footer {
   display: flex;
@@ -314,17 +313,17 @@ font-size: 18px;
   align-items: center;
 }
 .footer__call_contacts {
-display: flex;
-flex-direction: row;
-width: 100%;
-text-align: center;
-color: darkslateblue;
-margin-right: 5px;
-margin-top: 15px;
-font-family: Arial, sans-serif;
-justify-content: space-around;
-font-size: 15px;
-font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  color: darkslateblue;
+  margin-right: 5px;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  justify-content: space-around;
+  font-size: 15px;
+  font-weight: bold;
 }
 .button__text {
   display: flex;
@@ -392,7 +391,6 @@ footer {
   }
   .services_img {
     align-self: center;
-
   }
   .jak-dzialamy__img_left {
     width: 200px;
@@ -410,10 +408,14 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  /* .jak-dzialamy__img {
-    width: 60%;
-  } */
 }
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+
 @media (max-width: 640px) {
   .header {
     width: 100%;
@@ -435,7 +437,6 @@ footer {
     font-size: 26px;
     margin-bottom: 20px;
     text-align: center;
-
   }
   .services_img {
     padding: 10px 10px;
@@ -467,7 +468,7 @@ footer {
     max-width: 350px;
     padding-bottom: 20px;
     background-color: rgba(241, 196, 15, 0.1);
-}
+  }
 
   .jak-dzialamy__text-container {
     width: 80%;
@@ -557,10 +558,11 @@ footer {
   }
   .services__container {
     width: 113%;
-    background-size: 600px 800px;
+    background-size: 1200px 1200px;
+    background-position: 15% 25%;
   }
   .services_title {
-    font-size: 24px;
+    font-size: 21px;
     margin-bottom: 60px;
     text-align: center;
   }
@@ -576,9 +578,11 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 0.81em;
     width: 40%;
+    padding: 5px;
+    margin-right: 5px;
   }
 
   .jak-dzialamy__left-container {
@@ -606,35 +610,18 @@ footer {
   .navbar {
     width: 102%;
   }
+
   .services__container {
-    width: 102%;
-    margin-left: 0;
+    width: 113%;
+    background-size: 800px 1000px;
+    background-position: 25% 25%;
   }
-  .services__help,
-  .services__work,
-  .services__disputes {
-    font-size: 11px;
-    padding: 2px;
-  }
+
   .services_img {
     padding: 10px 10px;
     width: 100%;
     height: auto;
     align-self: center;
-  }
-  .first_service_img {
-    width: 115%;
-    margin-right: 10px;
-    margin-left: 5px;
-  }
-  .first_service_text {
-    margin-right: 10px;
-  }
-  .second_service_text {
-    margin-top: 15px;
-  }
-  .third_service_text {
-    margin-top: 15px;
   }
   .jak-dzialamy__sandglass_img_left {
     height: 250px;
@@ -656,8 +643,14 @@ footer {
   }
 }
 @media (max-width: 280px) {
+  .header {
+    width: 113%;
+  }
   .header :is(h1, p) {
     font-size: 30px;
+  }
+  .navbar {
+    width: 113%;
   }
   .services__help,
   .services__work,
@@ -665,17 +658,26 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 9px;
+    font-size: 10px;
     line-height: 0.81em;
     width: 40%;
+    padding: 2px;
+    margin: 0;
   }
   .jak-dzialamy__left-container {
-    width: 127%;
-    margin-left: 0;
+    width: 150%;
+    margin-left: 35px;
     margin-bottom: 0;
+  }
+  .jak-dzialamy__right-container {
+    width: 150%;
+    margin-left: 45px;
   }
   .jak-dzialamy__sandglass_img_left {
     height: 200px;
     margin: 75px 220px 0px 295px;
+  }
+  .footer {
+    width: 113%;
   }
 }
