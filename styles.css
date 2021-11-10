@@ -557,7 +557,6 @@ footer {
     width: 113%;
   }
   .services__container {
-    width: 113%;
     background-size: 1200px 1200px;
     background-position: 15% 25%;
   }
@@ -612,9 +611,8 @@ footer {
   }
 
   .services__container {
-    width: 113%;
     background-size: 800px 1000px;
-    background-position: 25% 25%;
+    background-position: 65% 25%;
   }
 
   .services_img {
